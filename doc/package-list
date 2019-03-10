@@ -1,0 +1,7 @@
+com.simbirsoft.itplace
+com.simbirsoft.itplace.common.constants
+com.simbirsoft.itplace.dao.repository
+com.simbirsoft.itplace.dao.repository.impl
+com.simbirsoft.itplace.domain.entity
+com.simbirsoft.itplace.service.api
+com.simbirsoft.itplace.service.impl
