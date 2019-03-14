@@ -3,9 +3,9 @@ package com.simbirsoft.itplace.dao.repository;
 import com.simbirsoft.itplace.domain.entity.PersonalData;
 
 /**
- * Репозиторий для получения персональных данных. Прочитайте про Data Access Layer
+ * Репозиторий для получения персональных данных. Прочитал про Data Access Layer
  *
- * @author a.stratonov
+ * @author a.stratonov and m.pynzar
  * @version 1.0
  */
 public interface PersonRepository {

@@ -3,6 +3,7 @@ package com.simbirsoft.itplace.dao.repository.impl;
 import com.simbirsoft.itplace.common.constants.PersonPropertyKeys;
 import com.simbirsoft.itplace.dao.repository.PersonRepository;
 import com.simbirsoft.itplace.domain.entity.PersonalData;
+import org.apache.log4j.Logger;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,10 +15,11 @@ import java.util.Properties;
 /**
  * Реализация репозитория @see {@link PersonRepository}
  *
- * @author an.stratonov
+ * @author an.stratonov and m.punzar
  * @version 1.0
  */
 public class PersonRepositoryFromPropertyFileImpl implements PersonRepository {
+    private static final Logger log = Logger.getLogger(PersonRepositoryFromPropertyFileImpl.class);
 
     /**
      * Свойство - опыт работы
@@ -38,12 +40,15 @@ public class PersonRepositoryFromPropertyFileImpl implements PersonRepository {
         Properties property = new Properties();
         try {
             property.load(new InputStreamReader(configFileInput, Charset.forName("UTF-8")));
+            log.info("открыл properties");
             return property;
         } catch (FileNotFoundException e) {
+            log.error("can't find file");
             System.out.println("Не найден файл настроек");
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+            log.error("can't find file");
         }
         return null;
     }

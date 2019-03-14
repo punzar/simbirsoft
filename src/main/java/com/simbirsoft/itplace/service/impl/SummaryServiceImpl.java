@@ -4,6 +4,7 @@ import com.simbirsoft.itplace.dao.repository.PersonRepository;
 import com.simbirsoft.itplace.dao.repository.impl.PersonRepositoryFromPropertyFileImpl;
 import com.simbirsoft.itplace.domain.entity.PersonalData;
 import com.simbirsoft.itplace.service.api.SummaryService;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -13,6 +14,7 @@ import java.io.IOException;
  * Реализация интерфейса @see {@link SummaryService}
  */
 public class SummaryServiceImpl implements SummaryService {
+    private static final Logger log = Logger.getLogger(SummaryServiceImpl.class);
 
     /**
      * @see PersonalData
@@ -110,6 +112,7 @@ public class SummaryServiceImpl implements SummaryService {
             }
             catch(IOException ex){
                 System.out.println(ex.getMessage());
+                log.error(ex.getMessage());
             }
         }
     }

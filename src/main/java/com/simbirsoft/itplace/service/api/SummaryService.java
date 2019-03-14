@@ -3,7 +3,7 @@ package com.simbirsoft.itplace.service.api;
 /**
  * Сервес для создания HTML файла для резюме
  *
- * @author a.stratonov
+ * @author a.stratonov and m.pynzar
  * @version 1.0
  */
 public interface SummaryService {
