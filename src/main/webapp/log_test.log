@@ -14,3 +14,6 @@
 2019-03-15 00:09:37 INFO  PersonRepositoryFromPropertyFileImpl:43 - открыл properties
 2019-03-15 00:09:37 INFO  Main:19 - Это информационное сообщение в мои логи!
 2019-03-15 00:09:37 ERROR Main:20 - Это сообщение об ошибке, на всякий.
+2019-04-09 22:37:54 INFO  PersonRepositoryFromPropertyFileImpl:43 - открыл properties
+2019-04-09 22:37:54 INFO  Main:19 - Это информационное сообщение в мои логи!
+2019-04-09 22:37:54 ERROR Main:20 - Это сообщение об ошибке, на всякий.

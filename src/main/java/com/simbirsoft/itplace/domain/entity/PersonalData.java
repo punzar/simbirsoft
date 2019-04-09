@@ -74,19 +74,19 @@ public class PersonalData {
             String additionalEducations,
             String skills,
             String examplesCode) {
-        this.FIO = FIO;
-        this.DOB = DOB;
-        this.phone = phone;
-        this.email = email;
-        this.skype = skype;
-        this.avatar = avatar;
-        this.target = target;
-        this.experiences = experiences;
-        this.educations = educations;
-        this.additionalEducations = additionalEducations;
-        this.skills = skills;
-        this.examplesCode = examplesCode;
-    }
+        setFIO(FIO);
+        setDOB(DOB);
+        setPhone(phone);
+        setEmail(email);
+        setSkype(skype);
+        setAvatarPath(avatar);
+        setTarget(target);
+        setExperiences(experiences);
+        setEducations(educations);
+        setAdditionalEducations(additionalEducations);
+        setSkills(skills);
+        setExamplesCode(examplesCode);
+       }
 
     public String getFIO() {
         return FIO;
